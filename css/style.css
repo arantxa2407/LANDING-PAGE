@@ -701,7 +701,6 @@
   transition: all 200ms ease;
   & p {
     width: 495px;
-    overflow: hidden;
   }
   & img {
     width: 96px;
@@ -770,13 +769,14 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 60px;
   & h2 {
     margin-bottom: 23px;
   }
 }
 
 .blog__container {
-  min-height: 500px;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -785,7 +785,7 @@
 
 .blog__card {
   width: 370px;
-  min-height: 100%;
+  height: 100%;
   border-radius: 10px;
   box-shadow: 0px 1px 10px 0px #0000001a;
   overflow: hidden;
@@ -852,6 +852,9 @@
     background: #5956e9;
     position: relative;
   }
+  & hr {
+    height: 100%;
+  }
 }
 
 .left,
@@ -870,6 +873,9 @@
 @media only screen and (max-width: 924px) {
   .hero-saction {
     padding: 25px 40px;
+  }
+  .hero {
+    max-width: 688px;
   }
 
   .h1 {
@@ -1055,557 +1061,13 @@
       box-shadow: 10px 10px 100px 0px #18303f4d;
       border-radius: 23px;
     }
-    .support {
-      width: 319px;
-    }
-
-    .screenshot {
-      width: 688px;
-      height: 767px;
-      & .descripcion {
-        margin: auto;
-      }
-    }
-
-    .slider__container {
-      width: 100%;
-      height: 444px;
-      & button {
-        display: none;
-      }
-    }
-
-    .slider {
-      width: 688px;
-      height: 100%;
-    }
-    .slide {
-      width: 164px;
-      height: 354px;
-    }
-
-    .position0 {
-      transform: translate(-214%, -50%);
-    }
-
-    .position1 {
-      transform: translate(-177%, -50%);
-    }
-
-    .position2 {
-      width: 227px;
-      height: 444px;
-    }
-
-    .position3 {
-      transform: translate(78%, -50%);
-    }
-
-    .position4 {
-      transform: translate(115%, -50%);
-    }
-
-    #puntitos {
-      & img {
-        height: 16px;
-        width: 16px;
-      }
-    }
-
-    .download {
-      width: 688px;
-      height: 414px;
-      align-items: end;
-      & .text {
-        width: 325px;
-        height: 187px;
-      }
-      & .descripcion::after {
-        text-align: left;
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.";
-        width: 325px;
-      }
-    }
-
-    .download__left {
-      width: 325px;
-      height: 100%;
-    }
-
-    .download__stad {
-      width: 100%;
-      height: 100px;
-    }
-
-    .stad {
-      height: 100px;
-      width: 96px;
-      padding: 11px 0;
-      & img {
-        width: 18px;
-        height: 18px;
-      }
-      & h4 {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-      }
-      .h4 {
-        text-transform: lowercase;
-      }
-      .h4::first-letter {
-        text-transform: uppercase;
-      }
-    }
-
-    .download__right {
-      height: 328px;
-      width: 335px;
-      & img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-
-    .sombra {
-      width: 138px;
-      height: 46px;
-    }
-
-    .use {
-      height: 523px;
-      padding-top: 0;
-    }
-
-    .rectangulo {
-      height: 402px;
-      padding-top: 50px;
-      & .descripcion::after {
-        color: #ffffff;
-        margin: auto;
-      }
-      & h2 {
-        margin: auto;
-        margin-bottom: 23px;
-        width: 357px;
-      }
-      & img {
-        width: 570px;
-        height: 231px;
-      }
-    }
-
-    .team {
-      height: 621px;
-      width: 688px;
-    }
-    .team__group {
-      height: 453px;
-    }
-
-    .card {
-      width: 213px;
-      height: 453px;
-    }
-
-    .card__text {
-      min-height: 150px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: center;
-      & p {
-        margin: 0 auto;
-      }
-      & h2 {
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 30px;
-      }
-      & h4 {
-        color: var(--gris);
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-      }
-    }
-
-    .card__text .descripcion {
-      position: relative;
-      color: transparent;
-      width: 158px;
-      height: 69px;
-    }
-
-    .card__text .descripcion::after {
-      text-align: center;
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
-      color: var(--gris);
-      width: 158px;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    .card__container-img {
-      width: 178px;
-      height: 178px;
-      & img {
-        object-fit: contain;
-        width: 100%;
-        height: 100%;
-      }
-      & .profile {
-        width: 160px;
-        height: 160px;
-      }
-    }
-
-    .card__media {
-      width: 180px;
-      height: 24px;
-    }
-
-    .customers {
-      height: 746px;
-      padding: 120px 40px;
-    }
-
-    .customers .text h2,
-    .customers .text p::after {
-      color: #ffffff;
-    }
-
-    .customers .text p {
-      color: transparent;
-    }
-
-    .customer__slider {
-      width: 688px;
-      height: 250px;
-    }
-
-    .customer__slider .descripcion {
-      position: relative;
-      color: transparent;
-      width: 374px;
-      height: 69px;
-    }
-
-    .customer__slider .descripcion::after {
-      text-align: center;
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.";
-      color: var(--gris);
-      width: 374px;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    .customer-card {
-      width: 450px;
-      height: 210px;
-      padding: 23px 38px;
-      & p {
-        width: 374px;
-      }
-      & img {
-        width: 50px;
-        height: 50px;
-      }
-    }
-
-    .position02 {
-      height: 250px;
-    }
-
-    #puntitos2 {
-      & img {
-        height: 16px;
-        width: 16px;
-      }
-    }
-
-    .blog {
-      height: 1124px;
-      width: 100%;
-      padding-top: 120px;
-    }
-
-    .blog__cajita {
-      width: 688px;
-      height: 809px;
-    }
-
-    .blog__container {
-      height: 633px;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .blog__card {
-      width: 213px;
-      height: 633px;
-      & h3 {
-        text-align: left;
-      }
-      & p {
-        text-align: left;
-        width: 100%;
-      }
-      & img {
-        width: 100%;
-        height: 228px;
-        object-fit: cover;
-      }
-      & a {
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 26px;
-        text-align: left;
-        color: #5956e9;
-      }
-    }
-
-    .blog__card-text {
-      padding: 30px 15px;
-      height: 405px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      & .descripcion {
-        height: 141px;
-      }
-    }
-    .blog__card-text:last-child {
-      & .h4 {
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        hyphens: auto;
-      }
-    }
-    .contact {
-      width: 688px;
-      height: 150px;
-      border-radius: 15px;
-      padding: 45px 18px;
-      left: 50%;
-      top: 19.4%;
-      background-color: #fff;
-      transform: translate(-50%, -50%);
-
-      & img {
-        width: 24px;
-        height: 24px;
-      }
-      & .circulo {
-        width: 60px;
-        height: 60px;
-      }
-      & h3 {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-      }
-    }
-
-    .left,
-    .right {
-      width: 223px;
-      height: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .right {
-      width: 211px;
-    }
-  
-}
-@media only screen and (max-width: 690px) {
-  .hero-saction {
-    padding: 30px 16px;
-  }
-  .hero {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 98px;
-    gap: 40px;
-  }
-
-  .h1 {
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 37.5px;
-    margin-bottom: 18px;
-  }
-
-  .cuadro__container-text {
-    & h1 {
-      height: 71px;
-    }
-    & p {
-      width: 100%;
-      height: 66px;
-    }
-  }
-
-  .cuadro__container-text .p::after {
-    width: 100%;
-  }
-
-  .text .descripcion {
-    width: 300px;
-  }
-
-  .text .descripcion::after {
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.";
-  }
-
-  .cuadro {
-    flex: 0 0 343px;
-    height: 358px;
-  }
-
-  .cuadro__sombra {
-    width: 323px;
-    height: 358px;
-    border: 10px solid var(--mClarito);
-  }
-
-  .cuadro__container {
-    width: 323px;
-    height: 318px;
-    padding: 30px 0 20px 18px;
-  }
-
-  .img__container-store {
-    margin-top: 18px;
-    width: 228px;
-    height: 34.13px;
-  }
-
-  .cuadro__container-download {
-    height: 83px;
-  }
-
-  .img__container-mobile {
-    max-width: 257px;
-    height: 521px;
-    border-radius: 40px;
-    margin-bottom: 120px;
-  }
-
-  .h2 {
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 37.5px;
-  }
-
-  .about {
-    height: 1087px;
-    padding: 0 16px;
-  }
-
-  .about__container {
-    height: 935px;
-    width: 343px;
-  }
-
-  .about__container2 {
-    height: 769px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .about__img-sombra {
-    width: 212px;
-  }
-
-  .about__components {
-    width: 343px;
-  }
-
-  .component__text .p {
-    width: 266px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-  }
-
-  .features {
-    height: 2230px;
-    padding: 60px 38px;
-  }
-
-  .features__container {
-    height: 2110px;
-    width: 297px;
-    gap: 32px;
-  }
-
-  .feature__components {
-    height: 1952px;
-  }
-
-  .feature__group {
-    justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 60px;
-  }
-
-  .feature__left {
-    height: 382px;
-    gap: 40px;
-
-    & p,
-    h3 {
-      text-align: center;
-    }
-    & img {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-
-  .feature__right {
-    height: 462px;
-    gap: 60px;
-    width: 215px;
-    margin-top: 60px;
-    & .feature__component {
-      width: 215px;
-      height: 201px;
-    }
-    & p,
-    h3 {
-      text-align: center;
-    }
-    & img {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-
-  .feature__img {
-    width: 214px;
-    height: 468px;
-    & img {
-      border-radius: 23px;
-      box-shadow: 40px 40px 100px 0px #18303f80;
-    }
   }
   .support {
-    width: 297px;
-    height: 201px;
+    width: 319px;
   }
 
   .screenshot {
-    width: 688px;
+    width: 728px;
     height: 767px;
     & .descripcion {
       margin: auto;
@@ -1634,7 +1096,7 @@
   }
 
   .position1 {
-    transform: translate(-177%, -50%);
+    transform: translate(-170%, -50%);
   }
 
   .position2 {
@@ -1643,11 +1105,11 @@
   }
 
   .position3 {
-    transform: translate(78%, -50%);
+    transform: translate(71%, -50%);
   }
 
   .position4 {
-    transform: translate(115%, -50%);
+    transform: translate(113%, -50%);
   }
 
   #puntitos {
@@ -1878,7 +1340,7 @@
   }
 
   .blog__cajita {
-    width: 688px;
+    max-width: 688px;
     height: 809px;
   }
 
@@ -1931,7 +1393,7 @@
     }
   }
   .contact {
-    width: 688px;
+    max-width: 688px;
     height: 150px;
     border-radius: 15px;
     padding: 45px 18px;
@@ -1962,6 +1424,421 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .right {
+    width: 211px;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .hero-saction {
+    padding: 30px 16px;
+  }
+  .hero {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 98px;
+    gap: 40px;
+  }
+
+  .h1 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 37.5px;
+    margin-bottom: 18px;
+  }
+
+  .cuadro__container-text {
+    & h1 {
+      height: 71px;
+    }
+    & p {
+      width: 100%;
+      height: 66px;
+    }
+  }
+
+  .cuadro__container-text .p::after {
+    width: 100%;
+  }
+
+  .text .descripcion {
+    width: 300px;
+  }
+
+  .text .descripcion::after {
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.";
+  }
+
+  .cuadro {
+    flex: 0 0 343px;
+    height: 358px;
+  }
+
+  .cuadro__sombra {
+    width: 323px;
+    height: 358px;
+    border: 10px solid var(--mClarito);
+  }
+
+  .cuadro__container {
+    width: 323px;
+    height: 318px;
+    padding: 30px 0 20px 18px;
+  }
+
+  .img__container-store {
+    margin-top: 18px;
+    width: 228px;
+    height: 34.13px;
+  }
+
+  .cuadro__container-download {
+    height: 83px;
+  }
+
+  .img__container-mobile {
+    max-width: 257px;
+    height: 521px;
+    border-radius: 40px;
+    margin-bottom: 120px;
+  }
+
+  .h2 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 37.5px;
+  }
+
+  .about {
+    height: 1087px;
+    padding: 0 16px;
+  }
+
+  .about__container {
+    height: 935px;
+    width: 343px;
+  }
+
+  .about__container2 {
+    height: 769px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about__img-sombra {
+    width: 212px;
+  }
+
+  .about__components {
+    width: 343px;
+  }
+
+  .component__text .p {
+    width: 266px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .features {
+    height: 2170px;
+    padding: 60px 38px;
+  }
+
+  .features__container {
+    height: 2050px;
+    width: 297px;
+    gap: 32px;
+  }
+
+  .feature__components {
+    height: 1892px;
+  }
+
+  .feature__group {
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .feature__left {
+    height: 382px;
+    gap: 40px;
+    & p,
+    h3 {
+      text-align: center;
+    }
+    & img {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .feature__right {
+    height: 462px;
+    gap: 60px;
+    width: 215px;
+    & .feature__component {
+      width: 215px;
+      height: 201px;
+    }
+    & p,
+    h3 {
+      text-align: center;
+    }
+    & img {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .feature__img {
+    width: 214px;
+    height: 468px;
+    & img {
+      border-radius: 23px;
+      box-shadow: 40px 40px 100px 0px #18303f80;
+    }
+  }
+
+  .feature__component .support {
+    width: 297px;
+    height: 201px;
+  }
+
+  .screenshot {
+    width: 375px;
+    height: 707px;
+    padding: 0;
+    margin: 60px 0;
+  }
+
+  .position0 {
+    transform: translate(-117%, -50%);
+  }
+
+  .position1 {
+    transform: translate(-90%, -50%);
+  }
+
+  .position3 {
+    transform: translate(-8%, -50%);
+  }
+
+  .position4 {
+    transform: translate(19%, -50%);
+  }
+
+  .download {
+    width: 379px;
+    height: 801px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    & h2 {
+      width: 288px;
+    }
+    & .text {
+      height: 166px;
+    }
+    & .descripcion::after {
+      text-align: left;
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.";
+    }
+  }
+
+  .download__left {
+    width: 329px;
+    height: 413px;
+  }
+
+  .use {
+    height: 431px;
+  }
+
+  .rectangulo {
+    height: 357px;
+    padding-top: 60px;
+    & h2 {
+      margin-bottom: 40px;
+    }
+    & img {
+      width: 343px;
+      height: 150px;
+    }
+  }
+
+  .team {
+    height: 1966px;
+    width: 372px;
+    margin: 60px 0;
+  }
+  .team__group {
+    height: 1800px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 343px;
+    height: 580px;
+  }
+
+  .card__text {
+    min-height: 160px;
+    width: 317px;
+    & h2 {
+      font-size: 31.25px;
+      font-weight: 700;
+      line-height: 47.25px;
+    }
+    & h4 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+    }
+  }
+
+  .card__text .descripcion {
+    width: 313px;
+    height: 72px;
+  }
+
+  .card__text .descripcion::after {
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae.";
+    width: 313px;
+  }
+
+  .card__container-img {
+    width: 220px;
+    height: 220px;
+    & .profile {
+      width: 198px;
+      height: 198px;
+    }
+  }
+
+  .card__media {
+    width: 282px;
+  }
+
+  .customers {
+    height: 588px;
+    padding: 60px 0;
+  }
+
+  .customer__slider {
+    width: 473px;
+  }
+
+  .customer__slider .descripcion {
+    width: 316px;
+    height: 70px;
+  }
+
+  .customer__slider .descripcion::after {
+    width: 319px;
+  }
+
+  .customer-card {
+    width: 343px;
+    height: 215px;
+    padding: 20px 9px;
+    & p {
+      width: 316px;
+    }
+  }
+
+  .position02 {
+    height: 250px;
+  }
+
+  #puntitos2 {
+    & img {
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  .blog {
+    height: 1969px;
+    width: 100%;
+    padding-top: 60px;
+  }
+
+  .blog__cajita {
+    width: 352px;
+    height: 1694px;
+    gap: 40px;
+  }
+
+  .blog__container {
+    height: 1528px;
+    width: 352px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog__card {
+    width: 343px;
+    min-height: 484px;
+    & p {
+      height: 72px;
+    }
+  }
+
+  .blog__card-text {
+    padding: 30px 13px;
+    max-height: 196px;
+    & .descripcion {
+      height: 72px;
+    }
+  }
+
+  .contact {
+    width: 343px;
+    height: 310px;
+    border-radius: 10px;
+    padding: 30px 34px;
+    left: 50%;
+    top: 11.3%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    flex-direction: column;
+
+    & img {
+      width: 20px;
+      height: 20px;
+    }
+    & .circulo {
+      width: 50px;
+      height: 50px;
+    }
+    & h3 {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    & hr{
+      width: 117px;
+      height: 4px;
+      background-color: #232233;
+    }
+  }
+
+  .left,
+  .right {
+    width: 223px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
   }
 
   .right {

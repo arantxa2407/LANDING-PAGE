@@ -189,6 +189,7 @@ footer {
   footer{
     min-width: 375px;
     max-height: 1010px;
+    padding-top: 215px;
   }
 
   .footer__logo,
