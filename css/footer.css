@@ -1,22 +1,65 @@
-footer {
+:root {
+  --moradito: #5956e9;
+  --mClarito: #7572ff;
+  --gris: #6c6c72;
+  --negro: #232233;
+  --blanco: #ffffff;
+}
+
+
+
+.p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #6c6c72;
+  width: 487px;
+}
+
+.h3 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 37.5px;
+}
+
+.h2 {
+  font-size: 31.25px;
+  font-weight: 700;
+  line-height: 47.25px;
+  text-align: center;
+}
+
+.h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.footer {
   background: #232233;
   width: 100%;
   min-height: 542px;
   padding: 12px;
   padding-top: 235px;
+  grid-area: footer;
 }
 
-.footer__container{
+.footer.blog {
+  padding-top: 120px;
+  min-height: 425px;
+}
+
+.footer__container {
   max-width: 1170px;
   min-height: 289px;
   margin: auto;
-  & .footer__inf p{
+  & .footer__inf p {
     width: 100%;
     color: #ffffff;
     height: 24px;
     margin-top: 20px;
   }
-  & hr{
+  & hr {
     width: 100%;
   }
 }
@@ -40,8 +83,14 @@ footer {
   justify-content: space-between;
 }
 
-.link{
+.link {
   width: 154px;
+}
+
+.footer__logo a {
+  font-size: 31.25px;
+  font-weight: 700;
+  line-height: 47.25px;
 }
 
 .footer__logo p,
@@ -51,6 +100,9 @@ footer {
   color: #ffffff;
   width: 100%;
   text-decoration: none;
+}
+footer .descripcion {
+  height: 70px;
 }
 
 .footer__redes {
@@ -67,11 +119,13 @@ footer {
   a {
     width: 20px;
     height: 20px;
+    line-height: 0;
   }
 }
 
 .link {
   color: #ffffff;
+  height: 181px;
   & li,
   a {
     color: #ffffff;
@@ -93,6 +147,7 @@ footer {
 .newsletter {
   color: #ffffff;
   width: 369px;
+  height: 181px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -102,7 +157,7 @@ footer {
     width: 100%;
     color: #ffffff;
   }
-  & form{
+  & form {
     position: relative;
   }
   & input {
@@ -119,7 +174,7 @@ footer {
   }
   & button {
     width: 52px;
-    height: 46px;    
+    height: 46px;
     margin: 2px;
     border-radius: 4px;
     border: none;
@@ -128,46 +183,52 @@ footer {
     right: 0;
   }
 }
+.footer__inf p {
+  text-align: center;
+}
 
-
-
-@media only screen and (max-width: 924px) {
-  footer{
+@media only screen and (max-width: 990px) {
+  .footer {
     padding-top: 147px;
     min-height: 438px;
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  .footer__container{
+  .footer.blog {
+    padding-top: 60px;
+    min-height: 350px;
+  }
+
+  .footer__container {
     max-width: 688px;
     min-height: 181px;
     margin: auto;
-    & h3{
+    & h3 {
       font-size: 20px;
     }
   }
 
-  .footer__sup {  
+  .footer__sup {
     align-items: end;
     gap: 20px;
   }
 
   .footer__logo {
-  width: 213px;
-  height: 181px;
-}
-.link{
-  width: 123px;
-  height: 175px;
-}
+    width: 213px;
+    height: 181px;
+  }
+  .link {
+    width: 123px;
+    height: 175px;
+  }
 
-  .footer__logo{
-    & p{
+  .footer__logo {
+    & p {
       overflow: hidden;
-    }    
-    & h2{
-      line-height: normal
+    }
+    & h2 {
+      line-height: normal;
     }
   }
 
@@ -183,31 +244,34 @@ footer {
       line-height: 12.8px;
     }
   }
-  
 }
 @media only screen and (max-width: 690px) {
-  footer{
+  .footer {
     min-width: 375px;
     max-height: 1010px;
     padding-top: 215px;
   }
 
+  .footer.blog {
+    padding-top: 55px;
+    max-height: 850px;
+  }
+
   .footer__logo,
   .link,
-  .newsletter{
+  .newsletter {
     width: 334px;
   }
 
-  .footer__sup{
+  .footer__sup {
     gap: 40px;
     justify-content: center;
     margin-bottom: 60px;
   }
 
-  .footer__inf p{
+  .footer__inf p {
     font-size: 12.8px;
     font-weight: 300;
     line-height: 12.8px;
   }
-
 }

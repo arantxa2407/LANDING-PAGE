@@ -22,38 +22,44 @@
         <div class="nav__bar-sup">
           <div class="nav__bar-left">
             <div class="nav__mail">
-              <img src="img/mail.svg" alt="" />
-              <p>Info@youremail.com</p>
+              <a href="mailto:info@youremail.com" class="nav__link--mail">
+                <img src="img/mail.svg" alt="Correo electrónico" />
+                Info@youremail.com</a
+              >
             </div>
             <div class="nav__phone">
-              <img src="img/telefono.svg" alt="" />
-              <p>(480) 555-0103</p>
+              <a href="tel:+14805550103" class="nav__link--phone">
+                <img src="img/telefono.svg" alt="Teléfono" />
+                (480) 555-0103</a
+              >
             </div>
           </div>
           <div class="nav__bar-right">
             <div class="nav__icon">
-              <a href="facebook.com">
-                <img src="img/facebook.svg" alt="" />
+              <a href="https://facebook.com" target="_blank">
+                <img src="img/facebook.svg" />
               </a>
             </div>
             <div class="nav__icon">
-              <a href="instagram.com">
+              <a href="https://instagram.com" target="_blank">
                 <img src="img/insta.svg" alt="" />
               </a>
             </div>
             <div class="nav__icon">
-              <a href="https://x.com/?lang=es">
+              <a href="https://x.com/?lang=es" target="_blank">
                 <img src="img/twitter.svg" alt="" />
               </a>
             </div>
             <div class="nav__icon">
-              <img src="img/youtube.svg" alt="" />
+              <a href="https://youtube.com" target="_blank">
+                <img src="img/youtube.svg" alt="" />
+              </a>
             </div>
           </div>
         </div>
         <div class="nav__bar-inf">
           <ul class="nav__ul">
-            <li class="nav__li">
+            <li class="nav__li actual">
               <a href="index.html">HOME</a>
             </li>
             <li class="nav__li">
@@ -80,25 +86,25 @@
         </div>
         <div class="nav__bar-responsive">
           <div class="nav__bar-container">
-            <div class="botones">
-              <img src="img/rayitas.svg" class="abrir" alt="" />
-              <img src="img/cruz.svg" class="cerrar" alt="" />
+            <div class="botones" id="botones">
+              <img src="img/rayitas.svg" class="abrir" id="abrir" alt="" />
+              <img src="img/cruz.svg" class="cerrar" id="cerrar" alt="" />
             </div>
-            <ul class="nav__ul-responsive">
+            <ul class="nav__ul-responsive" id="nav__ul-responsive">
               <li class="nav__li-responsive">
-                <a href="#">HOME</a>
+                <a href="index.html">HOME</a>
               </li>
               <li class="nav__li-responsive">
-                <a href="#">ABOUT</a>
+                <a href="#about">ABOUT</a>
               </li>
               <li class="nav__li-responsive">
-                <a href="#">FEATURES</a>
+                <a href="#features">FEATURES</a>
               </li>
               <li class="nav__li-responsive">
-                <a href="#">SCREENSHOT</a>
+                <a href="#screenshot">SCREENSHOT</a>
               </li>
               <li class="nav__li-responsive">
-                <a href="#">BLOG</a>
+                <a href="blog.html">BLOG</a>
               </li>
             </ul>
             <div class="nav__logo-responsive">
@@ -621,7 +627,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer class="footer">
       <div class="footer__container">
         <div class="footer__sup">
           <div class="footer__logo">
@@ -694,5 +700,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/nav.js"></script>
   </body>
 </html>
